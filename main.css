@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.937rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  padding: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  padding: 2rem 0;
+}
+
+p {
+  margin-bottom: 0.85em;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+/* MAIN STYLES */
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(244, 38%, 16%);
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 328px;
+}
+
+.card-image {
+  background-image: url('./images/image-header-mobile.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  height: 240px;
+}
+
+.card-text {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+div.card-text > p {
+  margin-bottom: 40px;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stats {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+/* TABLET */
+@media (min-width: 375px) and (max-width: 768px) {
+  .card-image {
+    height: 446px;
+  }
+  .card-text {
+    padding: 0 10%;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+  main {
+    flex-direction: row-reverse;
+    max-width: 1440px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 2.93rem;
+    padding-top: 0;
+  }
+
+  div.card-text > p {
+    margin-bottom: 4.8rem;
+  }
+
+  .card-image,
+  .card-text {
+    width: 50%;
+    height: auto;
+  }
+
+  .card-text {
+    text-align: left;
+    padding: 4.66rem;
+  }
+  .card-stats {
+    flex-direction: row;
+  }
+  .card-image {
+    background-image: url('./images/image-header-desktop.jpg');
+  }
+}
