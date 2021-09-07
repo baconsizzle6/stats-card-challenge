@@ -4,14 +4,18 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ## Table of contents
 
-- [The challenge](#the-challenge)
-- [Screenshot](#screenshot)
-- [Links](#links)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
+
+## Overview
+
+![](./screenshots/desktop-screenshot.png)
 
 ### The challenge
 
@@ -22,12 +26,6 @@ I was allowed to use any tools to help you complete the challenge.
 Your users should be able to:
 
 - View the optimal layout depending on their device's screen size
-
-### Screenshot
-
-![Desktop solution for the Stats preview card component coding challenge](./screenshots/desktop-screenshot.png)
-
-![Mobile solution for the Stats preview card component coding challenge](./screenshots/mobile-screenshot.png)
 
 ### Links
 
@@ -55,4 +53,4 @@ I want to continue to learn more about making my code responsive. I came across 
 
 ## Author
 
-- Valena David - [@baconsizzle6](https://www.frontendmentor.io/profile/baconsizzle6)
+- Frontend Mentor - [@baconsizzle6](https://www.frontendmentor.io/profile/baconsizzle6)
